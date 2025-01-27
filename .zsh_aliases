@@ -1,0 +1,10 @@
+alias ls='eza --icons'
+
+cat() {
+  if [[ "$1" == *.md ]]; then
+    glow "$@"
+  else
+    command cat "$@"
+  fi
+}
+
