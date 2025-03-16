@@ -12,7 +12,7 @@
     "multithreading": true
   },
   "display": {
-    "separator": " 󰅂 "
+    "separator": " "
   },
   "modules": [
     "break",
@@ -24,42 +24,47 @@
     },
     "break",
     {
-      "key": "󰅐 Date/Heure",
-      "keyColor": "yellow",
       "type": "datetime",
+      "key": "󰅐",
+      "keyColor": "yellow",
+      "outputColor": "yellow",
       "format": "{weekday} {day-in-month} {month-name}, {hour-pretty}:{minute-pretty}:{second-pretty}"
     },
     {
-      "key": "󰁹 Batterie",
-      "keyColor": "green",
       "type": "battery",
+      "key": "󰁹",
+      "keyColor": "green",
       "format": "{capacity}"
     },
-    {
-      "key": " Météo",
-      "keyColor": "blue",
-      "type": "weather"
-    },
+    //    {
+    //      "key": " Météo",
+    //      "keyColor": "blue",
+    //      "type": "weather"
+    //    },
     "break",
     {
-      "key": " OS",
+      "type": "os",
+      "key": "",
       "keyColor": "red",
-      "type": "os"
+      "outputColor": "red"
     },
     {
-      "key": "󰌢 Machine",
+      "type": "host",
+      "key": "󰌢",
       "keyColor": "magenta",
-      "type": "host"
+      "outputColor": "magenta"
     },
     {
-      "key": " Kernel",
+      "type": "kernel",
+      "key": "",
       "keyColor": "blue",
-      "type": "kernel"
+      "outputColor": "blue"
     },
     {
-      "key": "󰻠 CPU",
+      "type": "cpu",
+      "key": "󰻠",
       "keyColor": "green",
-      "type": "cpu"
+      "outputColor": "green",
     },
     "break",
     {
